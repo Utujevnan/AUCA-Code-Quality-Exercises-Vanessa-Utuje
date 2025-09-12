@@ -11,7 +11,6 @@
 // }
 
 function calculateFactorial(n) {
-  return n <= 1 ? 1 : Array.from();
+  if (n < 2) return 1;
+  return n * calculateFactorial(n - 1);
 }
-
-console.log(calculateFactorial(5));
